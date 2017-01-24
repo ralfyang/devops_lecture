@@ -1,5 +1,5 @@
 # DevOps Lecture document
-## Make a Dev. environment on laptop(MacBook)
+## Make a Dev. environment on laptop(Linux or MacBook)
 ### User Base environment Setup - Text color changes with Command Alias
 ```
 cat << EOF >>  ~/.bash_profile
