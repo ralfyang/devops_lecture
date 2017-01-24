@@ -1,6 +1,6 @@
-# DevOps Lecture 준비자료
-
-### Base Set - Text color changes with Command Alias
+# DevOps Lecture document
+## Make a Dev. environment on laptop(MacBook)
+### User Base environment Setup - Text color changes with Command Alias
 ```
 cat << EOF >>  ~/.bash_profile
 alias ll='ls -lai'
@@ -21,16 +21,9 @@ ssh-keygen -t rsa -b 4096
 cat ~/.ssh/id_rsa.pub
 ```
 
-
-# Rancher Dev. env.
-## Rancher via virtual box with vagrant
-### Git document
-* https://github.com/goody80/vagrant_rancher_cluster
-
-
-# Git
-## How to use Github
-### Add a public key to Github profile setting
+## Git
+### How to use Github
+#### Add a public key to Github profile setting
 * Copy your Public-key as below
 ```
 cat ~/.ssh/id_rsa.pub
@@ -40,9 +33,10 @@ cat ~/.ssh/id_rsa.pub
     * https://github.com/settings/profile
     * SSH and GPG keys > SSH keys > "New SSH Key"
 
-# Tools
-## How to use and Install
-### gitpush auto
+
+## Tools
+### gitpush auto: https://github.com/goody80/gitpush_direct
+#### How to install and use
 * Install
 
 ```
@@ -104,4 +98,20 @@ read touch1
 
 git push -u origin master
 ```
+
+### Docker Cli-dashboard: https://github.com/goody80/docker_cli_dashboard
+#### How to install and use
+* Install 
+```
+curl -sL bit.ly/ralf_dcs -o ./dcs
+sudo chmod 755 ./dcs
+sudo mv ./dcs /usr/bin/dcs
+```
+
+
+## Rancher Dev. env.
+### Rancher via virtual box with vagrant
+#### Git document
+* https://github.com/goody80/vagrant_rancher_cluster
+
 
