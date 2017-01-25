@@ -3,12 +3,20 @@
 ### User Base environment Setup - Text color changes with Command Alias
 
 ```sh
+# set for Bash default base environment (color and alias)
 cat << EOF >>  ~/.bash_profile
 alias ll='ls -lai'
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export TERM="xterm-color" 
 export PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
+EOF
+
+# Set for vim syntax color
+cat << EOF >>  ~/.vimrc
+filetype plugin indent on
+syntax on
+set term=xterm-256color
 EOF
 ```
 
