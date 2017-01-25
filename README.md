@@ -1,7 +1,8 @@
 # DevOps Lecture document
 ## Make a Dev. environment on laptop(Linux or MacBook)
 ### User Base environment Setup - Text color changes with Command Alias
-```
+
+```sh
 cat << EOF >>  ~/.bash_profile
 alias ll='ls -lai'
 export CLICOLOR=1
@@ -12,12 +13,12 @@ EOF
 ```
 
 ### Key-gen for public/ private key
-```
+```sh
 ssh-keygen -t rsa -b 4096
 ```
 
 ### Check the public-key
-```
+```sh
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -25,7 +26,7 @@ cat ~/.ssh/id_rsa.pub
 ### How to use Github
 #### Add a public key to Github profile setting
 * Copy your Public-key as below
-```
+```sh
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -35,17 +36,23 @@ cat ~/.ssh/id_rsa.pub
 
 
 ## Tools
+### docker-compose: https://docs.docker.com/compose/install
+#### How to install and use
+* Install
+```sh
+$ curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
 ### gitpush auto: https://github.com/goody80/gitpush_direct
 #### How to install and use
 * Install
-
-```
+```sh
 curl -sL bit.ly/gitauto |bash
 ```
 
 * Use
-
-```
+```sh
 ==================================================================
  -  Install has been completed  -                  Version 0.2
 ==================================================================
@@ -61,8 +68,7 @@ curl -sL bit.ly/gitauto |bash
 ```
 
 * Source
-
-```
+```sh
 $ cat /usr/local/bin/gitpush
 #!/bin/bash
 ### Made by Ralf Yang
@@ -102,16 +108,34 @@ git push -u origin master
 ### Docker Cli-dashboard: https://github.com/goody80/docker_cli_dashboard
 #### How to install and use
 * Install 
-```
+```sh
 curl -sL bit.ly/ralf_dcs -o ./dcs
 sudo chmod 755 ./dcs
 sudo mv ./dcs /usr/bin/dcs
 ```
 
 
+## Docker Dev. env.
+### Docker environment via virtual box with vagrant
+#### Git document
+* https://github.com/goody80/vagrant_docker_cluster
+```sh
+git clone https://github.com/goody80/vagrant_docker_cluster.git
+cd vagrant_docker_cluster
+vi Vagrantfile
+vagrant up docker01.dev
+vagrant ssh docker01.dev
+```
+
+
+
 ## Rancher Dev. env.
 ### Rancher via virtual box with vagrant
 #### Git document
 * https://github.com/goody80/vagrant_rancher_cluster
-
+```sh
+git clone https://github.com/goody80/vagrant_rancher_cluster.git
+cd vagrant_rancher_cluster
+vagrant up rancher && vagrant up vmhost01  && vagrant up vmhost02
+```
 
