@@ -20,6 +20,7 @@ set term=xterm-256color
 EOF
 ```
 
+
 ### Key-gen for public/ private key
 ```sh
 ssh-keygen -t rsa -b 4096
