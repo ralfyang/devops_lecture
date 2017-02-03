@@ -45,6 +45,12 @@ cat ~/.ssh/id_rsa.pub
 
 
 ## Tools
+### Vagrant: http://vagrant.io
+#### How to install and use
+* Download & install
+    * https://www.vagrantup.com/downloads.html 
+
+
 ### docker-compose: https://docs.docker.com/compose/install
 #### How to install and use
 * Install
