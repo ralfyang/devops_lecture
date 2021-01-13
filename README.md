@@ -59,7 +59,7 @@ curl -L "https://github.com/docker/compose/releases/download/1.10.0/docker-compo
 chmod +x /usr/local/bin/docker-compose
 ```
 
-### gitpush auto: https://github.com/goody80/gitpush_direct
+### gitpush auto: https://github.com/ralfyang/gitpush_direct
 #### How to install and use
 * Install
 ```sh
@@ -120,7 +120,7 @@ read touch1
 git push -u origin master
 ```
 
-### Docker Cli-dashboard: https://github.com/goody80/docker_cli_dashboard
+### Docker Cli-dashboard: https://github.com/ralfyang/docker_cli_dashboard
 #### How to install and use
 * Install 
 ```sh
@@ -133,9 +133,9 @@ sudo mv ./dcs /usr/bin/dcs
 ## Docker Dev. env.
 ### Docker environment via virtual box with vagrant
 #### Git document
-* https://github.com/goody80/vagrant_docker_cluster
+* https://github.com/ralfyang/vagrant_docker_cluster
 ```sh
-git clone https://github.com/goody80/vagrant_docker_cluster.git
+git clone https://github.com/ralfyang/vagrant_docker_cluster.git
 cd vagrant_docker_cluster
 vagrant up docker01.dev
 vagrant ssh docker01.dev
@@ -146,9 +146,9 @@ vagrant ssh docker01.dev
 ## Rancher Dev. env.
 ### Rancher via virtual box with vagrant
 #### Git document
-* https://github.com/goody80/vagrant_rancher_cluster
+* https://github.com/ralfyang/vagrant_rancher_cluster
 ```sh
-git clone https://github.com/goody80/vagrant_rancher_cluster.git
+git clone https://github.com/ralfyang/vagrant_rancher_cluster.git
 cd vagrant_rancher_cluster
 vagrant up rancher && vagrant up vmhost01  && vagrant up vmhost02
 ```
